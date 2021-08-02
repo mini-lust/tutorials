@@ -1,0 +1,28 @@
+[package]
+name = "example-app-generated"
+version = "0.1.0"
+authors = ["ihciah <ihciah@gmail.com>"]
+edition = "2018"
+publish = false
+
+[dependencies]
+# framework self
+mini-lust-macros = { path = "../mini-lust-macros" }
+mini-lust-chap6 = { path = "../mini-lust" }
+
+# framework generated dependency
+async-trait = "0.1"
+tokio = { version = "1.9", feature = ["full"] }
+tower = { version = "0.4", features = ["make", "balance", "discover", "util", "limit", "buffer"] }
+
+# example dependency
+log = "0.4"
+env_logger = "0.9"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"

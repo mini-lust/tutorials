@@ -1,0 +1,32 @@
+[package]
+name = "mini-lust-chap6"
+version = "0.1.0"
+authors = ["ihciah <ihciah@gmail.com>"]
+edition = "2018"
+publish = false
+
+[dependencies]
+log = "0.4"
+bytes = "1.0"
+byteorder = "1.4"
+num_enum = "0.5"
+async-trait = "0.1"
+thiserror = "1.0"
+pin-project = "1.0"
+
+tokio-tower = "0.5"
+tokio-stream = { version = "0.1", features = ["net"] }
+tokio-util = { version = "0.6", features = ["codec"] }
+tower = { version = "0.4", features = ["make", "balance", "discover", "util", "limit", "buffer"] }
+futures-core = "0.3"
+futures = { version = "0.3", features = ["async-await", "std"] }
+futures-util = { version = "0.3", features = ["default", "sink"] }
+tokio = { version = "1", features = ["macros", "rt", "net", "rt-multi-thread"] }
+
+[dev-dependencies]
+tokio-test = "0.4"
+env_logger = "0.8"
+
+[features]
+default = []
+unstable = []

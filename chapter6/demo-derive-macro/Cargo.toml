@@ -1,0 +1,11 @@
+[package]
+name = "demo-derive-macro"
+version = "0.1.0"
+authors = ["ihciah <ihciah@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+mini-lust-macros = { path = "../mini-lust-macros" }
+
+# Dependency of generated code
+mini-lust-chap6 = { path = "../mini-lust" }

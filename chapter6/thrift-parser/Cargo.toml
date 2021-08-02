@@ -1,0 +1,15 @@
+[package]
+name = "thrift-parser"
+version = "0.0.4"
+authors = ["ihciah <ihciah@gmail.com>"]
+edition = "2018"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/ihciah/thrift-parser"
+description = "A simple thrift parser."
+keywords = ["thrift", "parser", "nom"]
+
+[dependencies]
+nom = "6"
+derive-newtype = "0.2"
+float-cmp = "0.8"

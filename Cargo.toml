@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "chapter2/mini-lust",
+    "chapter3/mini-lust",
+    "chapter4/mini-lust",
+    "chapter5/mini-lust",
+    "chapter6/demo-generator",
+    "chapter6/demo-example-app",
+    "chapter6/demo-example-app-generated",
+    "chapter6/demo-derive-macro",
+    "chapter6/mini-lust-generator",
+    "chapter6/mini-lust-macros",
+    "chapter6/mini-lust",
+    "chapter6/thrift-parser",
+]

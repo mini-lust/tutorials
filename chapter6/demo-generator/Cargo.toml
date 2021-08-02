@@ -1,0 +1,9 @@
+[package]
+name = "demo-generator"
+version = "0.1.0"
+authors = ["ihciah <ihciah@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+thrift-parser = { path = "../thrift-parser" }
+quote = "1"
