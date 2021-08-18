@@ -140,7 +140,7 @@ Document 由 Header 和 Definition 组成，即 `Const | Typedef | Enum | Senum 
 namespace rust demo
 
 struct User {
-    1: required i32 id,
+    1: required i32 user_id,
     2: required string user_name,
     3: required bool is_male,
 
